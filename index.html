@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Calculator</title>
+</head>
+
+<body>
+    <main>
+        <section id="top-left">
+            <nav>
+                <h1>BMI CALCULATOR</h1>
+            </nav>
+            <div class="container">
+                <form>
+                    <div class="genderInput">
+                        <div>
+                            <label for="male"><i class="fa-solid fa-mars"></i> Male
+                                <input type="radio" name="gender" id="male" value="male">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="female"><i class="fa-solid fa-venus"></i> Female
+                                <input type="radio" name="gender" id="female" value="female">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="other"><i class="fa-solid fa-transgender"></i> Other
+                                <input type="radio" name="gender" id="other" value="other">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="heightInput">
+                        <div class="controls">
+                            <div>
+                                <div class="control-label">Height</div>
+                                <div class="unitBtns">
+                                    <input type="radio" name="unit-H" id="feet" value="feet">
+                                    <label for="feet">Feet</label>
+                                    <input type="radio" name="unit-H" id="cm" value="cm">
+                                    <label for="cm">CM</label>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="number" name="measureHeight" id="measureHeight" max="10" disabled>
+                            </div>
+                        </div>
+                        <input type="range" name="height" id="height" min="0" max="10" step="any" disabled value="5">
+                    </div>
+                    <div class="weightInput">
+                        <div class="controls">
+                            <div>
+                                <div class="control-label">Weight</div>
+                                <div class="unitBtns">
+                                    <input type="radio" name="unit-W" id="kg" value="kg">
+                                    <label for="kg">KG</label>
+                                    <input type="radio" name="unit-W" id="pounds" value="pounds">
+                                    <label for="pounds">Pounds</label>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="number" name="measureWeight" id="measureWeight" max="10" disabled>
+                            </div>
+                        </div>
+                        <input type="range" name="weight" id="weight" min="0" step="any" disabled value="5">
+                    </div>
+                    <button type="submit" id="submit">Calculate BMI</button>
+                </form>
+            </div>
+        </section>
+        <section id="bottom-left">
+            <div class="result-container">
+                <h2>Your BMI Score</h2>
+                <div>
+                    <div id="result">
+                        00.00
+                    </div>
+                    <p>
+                        Healthy weight range <br>
+                        for your Height: <br>
+                        <b id="healthyWeight">59.9KG - 81KG</b>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="right">
+            <ul>
+                <li>
+                    <a href="https://linkedin.com/in/jatinkaushik-jk" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/jatinkaushik-jk" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/jatinkaushik-jk" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-square-behance"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/jatinkaushik.jk" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="fitness">
+                <div class="slide">
+                    <img src="./assets/fitness1.png" alt="fitness">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
