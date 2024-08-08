@@ -36,10 +36,10 @@ Welcome to the BMI Calculator project! This web app is designed to help users ca
 1. **Clone the Repository**
 
     ```sh
-    git clone https://github.com/jatinkaushik-jk/bmi-calculator.git
+    git clone https://github.com/jatinkaushik-jk/BMI-Calculator.git
     ```
     ```sh
-    cd bmi-calculator
+    cd BMI-Calculator
     ```
 
 2. **Open the `index.html` File**
